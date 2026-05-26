@@ -1,0 +1,33 @@
+:root {
+  --pink: #ff4d6d;
+  --blue: #4d7cff;
+  --gold: #ffd166;
+  --bg: #1a1a2e;
+  --card: #16213e;
+  --text: #f0f0f0;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', 'PingFang SC', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+button {
+  background: var(--pink);
+  border: none;
+  color: white;
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:active { transform: scale(0.95); }
+button:hover { box-shadow: 0 0 20px var(--pink); }
